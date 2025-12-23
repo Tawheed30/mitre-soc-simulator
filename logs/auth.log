@@ -1,0 +1,4 @@
+Jul 11 02:10:01 server sshd[2222]: Failed password for root from 10.0.0.8
+Jul 11 02:10:04 server sshd[2223]: Failed password for root from 10.0.0.8
+Jul 11 02:10:07 server sshd[2224]: Failed password for root from 10.0.0.8
+Jul 11 02:10:12 server sshd[2225]: Accepted password for root from 10.0.0.8

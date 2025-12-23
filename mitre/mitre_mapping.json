@@ -1,0 +1,8 @@
+{
+  "SSH_BRUTE_FORCE": {
+    "technique_id": "T1110",
+    "technique_name": "Brute Force",
+    "tactic": "Credential Access",
+    "severity": "HIGH"
+  }
+}
