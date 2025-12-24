@@ -1,28 +1,21 @@
-# MITRE ATT&CK SOC Incident Response Simulator
+k## Project Structure
 
-## Overview
-This project simulates a real-world Security Operations Center (SOC) workflow.
-It analyzes Linux authentication logs to detect SSH brute-force attacks, maps
-them to MITRE ATT&CK techniques, and triggers automated incident response actions.
-
-## Key Features
-- SSH brute-force attack detection from authentication logs
-- MITRE ATT&CK technique mapping (T1110 – Brute Force)
-- Severity-based automated incident response
-- Alert logging for SOC visibility
-- SOC-style incident report generation
-
-## Project Architecture
-Logs → Detection Engine → MITRE Mapping → Incident Response → SOC Report
-
-## Technologies Used
-- Python
-- Linux Authentication Logs
-- MITRE ATT&CK Framework
-- SOC & Incident Response Concepts
-
-## How to Run
-```bash
-python3 detector.py
-python3 report_generator.py
+```text
+soar-incident-response/
+├── alerts/
+│   └── alerts.json          # Sample security alerts (input)
+├── config/
+│   └── response_rules.json  # Response playbooks and actions
+├── reports/
+│   └── incident_report.txt  # Generated incident reports
+├── src/
+│   ├── alert_ingestor.py    # Loads and parses alerts
+│   ├── decision_engine.py  # Determines response actions
+│   ├── response_engine.py  # Executes response playbooks
+│   ├── mitre_mapper.py     # Maps alerts to MITRE ATT&CK
+│   ├── reporter.py         # Generates incident reports
+│   └── main.py             # Application entry point
+├── README.md
+├── requirements.txt
+└── .gitignore
 
